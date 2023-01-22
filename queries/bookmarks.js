@@ -27,7 +27,6 @@ const getBookmark = async (id) => {
 };
 
 const createBookmark = async (bookmark) => {
-  console.log(bookmark);
   const { name, url, category, is_favorite } = bookmark;
   try {
     const newBookmark = await db.one(
